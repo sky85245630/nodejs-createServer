@@ -5,6 +5,11 @@ http.createServer(function(request,response){
     response.writeHead(200,{"Content-Type":"text/plain"});
     //寫入的文字
     response.write('hello world!!')
+
+
+    //若傳送html為text/html
+    // response.writeHead(200,{"Content-Type":"text/html"});
+    // response.write('<h1>hello world!!</h1>')
     //結束
     response.end();
 }).listen(8080);
